@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E31DC5C7-5F41-449F-911A-A30924CA559B}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Library", "src\Library\Library.fsproj", "{22154CB6-7626-4256-9EFC-6320E5B9AAEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +14,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22154CB6-7626-4256-9EFC-6320E5B9AAEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22154CB6-7626-4256-9EFC-6320E5B9AAEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22154CB6-7626-4256-9EFC-6320E5B9AAEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22154CB6-7626-4256-9EFC-6320E5B9AAEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22154CB6-7626-4256-9EFC-6320E5B9AAEB} = {E31DC5C7-5F41-449F-911A-A30924CA559B}
 	EndGlobalSection
 EndGlobal
