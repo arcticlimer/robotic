@@ -62,7 +62,7 @@ module Parser =
             currentRuleGroup = newRoleGroup
             isNewRuleGroup = true }
 
-    let addSitemap right token =
+    let sitemap right token =
         { token with
             sitemaps = right :: token.sitemaps
             isNewRuleGroup = true }
@@ -110,7 +110,7 @@ module Robotic =
             | "crawl-delay" -> Parser.crawlDelay (int right) token
             | "allow" -> Parser.allow right token
             | "disallow" -> Parser.disallow right token
-            | "sitemap" -> Parser.addSitemap right token
+            | "sitemap" -> Parser.sitemap right token
             | _ -> token
         | None -> token
 

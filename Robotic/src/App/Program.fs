@@ -1,5 +1,4 @@
-﻿
-open Library
+﻿open Library
 open System
 
 "/tmp/robots.txt"
